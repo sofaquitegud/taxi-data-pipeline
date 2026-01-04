@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: dim_datetime
+    description: Date/time dimension table
+    columns:
+      - name: datetime_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+      - name: full_datetime
+        tests:
+          - not_null
+
+  - name: dim_location
+    description: NYC taxi zone locations
+    columns:
+      - name: location_id
+        description: Primary key
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_payment
+    description: Payment type lookup
+    columns:
+      - name: payment_type_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_rate
+    description: Rate code lookup
+    columns:
+      - name: rate_code_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_trips
+    description: Central fact table for taxi trips
+    columns:
+      - name: trip_id
+        description: Surrogate key
+        tests:
+          - unique
+          - not_null
+      - name: trip_distance_miles
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null

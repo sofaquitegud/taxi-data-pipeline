@@ -1,0 +1,66 @@
+version: 2
+
+sources:
+  - name: taxi_raw
+    description: Raw taxi trip data loaded from processed parquet files
+    database: taxi_warehouse
+    schema: staging
+    tables:
+      - name: yellow_taxi_trips
+        description: Yellow taxi trip records
+        columns:
+          - name: pickup_datetime
+            description: Trip pickup timestamp
+          - name: dropoff_datetime
+            description: Trip dropoff timestamp
+          - name: PULocationID
+            description: Pickup location zone ID
+          - name: DOLocationID
+            description: Dropoff location zone ID
+          - name: passenger_count
+            description: Number of passengers
+          - name: trip_distance
+            description: Trip distance in miles
+          - name: fare_amount
+            description: Base fare amount
+          - name: total_amount
+            description: Total trip cost
+            
+      - name: green_taxi_trips
+        description: Green taxi trip records
+        columns:
+          - name: pickup_datetime
+            description: Trip pickup timestamp
+          - name: dropoff_datetime
+            description: Trip dropoff timestamp
+
+models:
+  - name: stg_yellow_taxi
+    description: Staged yellow taxi trips with cleaned and renamed columns
+    columns:
+      - name: trip_id
+        description: Surrogate key for trip
+        tests:
+          - unique
+          - not_null
+      - name: pickup_datetime
+        tests:
+          - not_null
+      - name: dropoff_datetime
+        tests:
+          - not_null
+      - name: pickup_location_id
+        tests:
+          - not_null
+      - name: total_amount
+        tests:
+          - not_null
+
+  - name: stg_green_taxi
+    description: Staged green taxi trips with cleaned and renamed columns
+    columns:
+      - name: trip_id
+        description: Surrogate key for trip
+        tests:
+          - unique
+          - not_null

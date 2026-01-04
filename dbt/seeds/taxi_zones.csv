@@ -1,0 +1,104 @@
+location_id,zone_name,borough,service_zone
+1,Newark Airport,EWR,EWR
+2,Jamaica Bay,Queens,Boro Zone
+3,Allerton/Pelham Gardens,Bronx,Boro Zone
+4,Alphabet City,Manhattan,Yellow Zone
+5,Arden Heights,Staten Island,Boro Zone
+6,Arrochar/Fort Wadsworth,Staten Island,Boro Zone
+7,Astoria,Queens,Boro Zone
+8,Astoria Park,Queens,Boro Zone
+9,Auburndale,Queens,Boro Zone
+10,Baisley Park,Queens,Boro Zone
+11,Bath Beach,Brooklyn,Boro Zone
+12,Battery Park,Manhattan,Yellow Zone
+13,Battery Park City,Manhattan,Yellow Zone
+14,Bay Ridge,Brooklyn,Boro Zone
+15,Bay Terrace/Fort Totten,Queens,Boro Zone
+16,Bayside,Queens,Boro Zone
+17,Bedford,Brooklyn,Boro Zone
+18,Bedford Park,Bronx,Boro Zone
+19,Bellerose,Queens,Boro Zone
+20,Belmont,Bronx,Boro Zone
+21,Bensonhurst East,Brooklyn,Boro Zone
+22,Bensonhurst West,Brooklyn,Boro Zone
+23,Bloomfield/Emerson Hill,Staten Island,Boro Zone
+24,Bloomingdale,Manhattan,Yellow Zone
+25,Boerum Hill,Brooklyn,Boro Zone
+26,Borough Park,Brooklyn,Boro Zone
+27,Breezy Point/Fort Tilden/Riis Beach,Queens,Boro Zone
+28,Briarwood/Jamaica Hills,Queens,Boro Zone
+29,Brighton Beach,Brooklyn,Boro Zone
+30,Broad Channel,Queens,Boro Zone
+31,Bronx Park,Bronx,Boro Zone
+32,Bronxdale,Bronx,Boro Zone
+33,Brooklyn Heights,Brooklyn,Boro Zone
+34,Brooklyn Navy Yard,Brooklyn,Boro Zone
+35,Brownsville,Brooklyn,Boro Zone
+36,Bushwick North,Brooklyn,Boro Zone
+37,Bushwick South,Brooklyn,Boro Zone
+38,Cambria Heights,Queens,Boro Zone
+39,Canarsie,Brooklyn,Boro Zone
+40,Carroll Gardens,Brooklyn,Boro Zone
+41,Central Harlem,Manhattan,Boro Zone
+42,Central Harlem North,Manhattan,Boro Zone
+43,Central Park,Manhattan,Yellow Zone
+44,Charleston/Tottenville,Staten Island,Boro Zone
+45,Chinatown,Manhattan,Yellow Zone
+46,City Island,Bronx,Boro Zone
+47,Claremont/Bathgate,Bronx,Boro Zone
+48,Clinton East,Manhattan,Yellow Zone
+49,Clinton Hill,Brooklyn,Boro Zone
+50,Clinton West,Manhattan,Yellow Zone
+75,East Harlem North,Manhattan,Boro Zone
+76,East Harlem South,Manhattan,Boro Zone
+79,East Village,Manhattan,Yellow Zone
+87,Financial District North,Manhattan,Yellow Zone
+88,Financial District South,Manhattan,Yellow Zone
+90,Flatiron,Manhattan,Yellow Zone
+100,Garment District,Manhattan,Yellow Zone
+107,Gramercy,Manhattan,Yellow Zone
+113,Greenwich Village North,Manhattan,Yellow Zone
+114,Greenwich Village South,Manhattan,Yellow Zone
+125,Hudson Sq,Manhattan,Yellow Zone
+127,JFK Airport,Queens,Airports
+128,Jackson Heights,Queens,Boro Zone
+132,JFK Airport,Queens,Airports
+137,Kips Bay,Manhattan,Yellow Zone
+138,LaGuardia Airport,Queens,Airports
+140,Lenox Hill East,Manhattan,Yellow Zone
+141,Lenox Hill West,Manhattan,Yellow Zone
+142,Lincoln Square East,Manhattan,Yellow Zone
+143,Lincoln Square West,Manhattan,Yellow Zone
+144,Little Italy/NoLiTa,Manhattan,Yellow Zone
+148,Lower East Side,Manhattan,Yellow Zone
+151,Manhattan Valley,Manhattan,Yellow Zone
+158,Meatpacking/West Village West,Manhattan,Yellow Zone
+161,Midtown Center,Manhattan,Yellow Zone
+162,Midtown East,Manhattan,Yellow Zone
+163,Midtown North,Manhattan,Yellow Zone
+164,Midtown South,Manhattan,Yellow Zone
+166,Morningside Heights,Manhattan,Boro Zone
+170,Murray Hill,Manhattan,Yellow Zone
+186,Penn Station/Madison Sq West,Manhattan,Yellow Zone
+209,Seaport,Manhattan,Yellow Zone
+211,SoHo,Manhattan,Yellow Zone
+224,Stuy Town/PCV,Manhattan,Yellow Zone
+229,Sutton Place/Turtle Bay North,Manhattan,Yellow Zone
+230,Sutton Place/Turtle Bay South,Manhattan,Yellow Zone
+231,Times Sq/Theatre District,Manhattan,Yellow Zone
+232,TriBeCa/Civic Center,Manhattan,Yellow Zone
+233,Two Bridges/Seward Park,Manhattan,Yellow Zone
+234,UN/Turtle Bay South,Manhattan,Yellow Zone
+236,Upper East Side North,Manhattan,Yellow Zone
+237,Upper East Side South,Manhattan,Yellow Zone
+238,Upper West Side North,Manhattan,Yellow Zone
+239,Upper West Side South,Manhattan,Yellow Zone
+243,Washington Heights North,Manhattan,Boro Zone
+244,Washington Heights South,Manhattan,Boro Zone
+246,West Chelsea/Hudson Yards,Manhattan,Yellow Zone
+249,West Village,Manhattan,Yellow Zone
+261,World Trade Center,Manhattan,Yellow Zone
+262,Yorkville East,Manhattan,Yellow Zone
+263,Yorkville West,Manhattan,Yellow Zone
+264,NV,N/A,N/A
+265,NA,N/A,N/A

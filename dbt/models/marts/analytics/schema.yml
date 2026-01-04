@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: daily_trip_summary
+    description: Daily aggregated trip metrics by location and taxi type
+    columns:
+      - name: trip_date
+        tests:
+          - not_null
+      - name: total_trips
+        tests:
+          - not_null
+
+  - name: hourly_demand_patterns
+    description: Hour-of-day and day-of-week demand patterns
+    columns:
+      - name: hour_of_day
+        tests:
+          - not_null
+      - name: trip_count
+        tests:
+          - not_null
+
+  - name: zone_performance
+    description: Performance metrics by pickup/dropoff zone
+    columns:
+      - name: location_id
+        tests:
+          - not_null

@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Environment
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Airflow
+airflow/logs/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# dbt
+dbt/logs/
+dbt/target/
+dbt/dbt_packages/
+
+# Spark
+spark/jars/
+*.jar
+
+# Data files (don't commit large data)
+*.parquet
+*.csv
+!dbt/seeds/*.csv
+data/
+*.db
+
+# Docker
+*.log
+docker-compose.override.yml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Great Expectations
+great_expectations/uncommitted/
+great_expectations/.ge_store_backend_id
+great_expectations/validations/
+great_expectations/checkpoints/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Misc
+*.bak
+*.tmp
+.cache/
