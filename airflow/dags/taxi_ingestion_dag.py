@@ -9,7 +9,7 @@ import sys
 
 sys.path.insert(0, "/opt/ingestion")
 
-from ingestion.download_tlc_data import TLCDataDownloader
+from download_tlc_data import TLCDataDownloader
 
 
 # Default arguments for the DAG

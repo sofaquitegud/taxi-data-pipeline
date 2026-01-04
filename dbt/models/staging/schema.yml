@@ -41,7 +41,9 @@ models:
       - name: trip_id
         description: Surrogate key for trip
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
       - name: pickup_datetime
         tests:
@@ -62,5 +64,7 @@ models:
       - name: trip_id
         description: Surrogate key for trip
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null

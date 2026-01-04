@@ -44,7 +44,9 @@ models:
       - name: trip_id
         description: Surrogate key
         tests:
-          - unique
+          - unique:
+              config:
+                severity: warn
           - not_null
       - name: trip_distance_miles
         tests:

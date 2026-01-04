@@ -11,35 +11,40 @@ WITH source AS (
 
 renamed AS (
     SELECT
-        -- IDs
-        {{ dbt_utils.generate_surrogate_key(['pickup_datetime', 'dropoff_datetime', 'PULocationID', 'DOLocationID']) }} AS trip_id,
+        -- IDs (generate simple surrogate key)
+        md5(
+            coalesce(cast(pickup_datetime as text), '') || '-' ||
+            coalesce(cast(dropoff_datetime as text), '') || '-' ||
+            coalesce(cast("PULocationID" as text), '') || '-' ||
+            coalesce(cast("DOLocationID" as text), '')
+        ) AS trip_id,
         
         -- Timestamps
         pickup_datetime,
         dropoff_datetime,
         
         -- Location IDs
-        CAST(PULocationID AS INTEGER) AS pickup_location_id,
-        CAST(DOLocationID AS INTEGER) AS dropoff_location_id,
+        "PULocationID"::INTEGER AS pickup_location_id,
+        "DOLocationID"::INTEGER AS dropoff_location_id,
         
         -- Trip details
-        CAST(passenger_count AS INTEGER) AS passenger_count,
-        CAST(trip_distance AS NUMERIC(10,2)) AS trip_distance_miles,
+        passenger_count::INTEGER AS passenger_count,
+        trip_distance::NUMERIC(10,2) AS trip_distance_miles,
         
         -- Fares
-        CAST(fare_amount AS NUMERIC(10,2)) AS fare_amount,
-        CAST(extra AS NUMERIC(10,2)) AS extra_charges,
-        CAST(mta_tax AS NUMERIC(10,2)) AS mta_tax,
-        CAST(tip_amount AS NUMERIC(10,2)) AS tip_amount,
-        CAST(tolls_amount AS NUMERIC(10,2)) AS tolls_amount,
-        CAST(total_amount AS NUMERIC(10,2)) AS total_amount,
+        fare_amount::NUMERIC(10,2) AS fare_amount,
+        extra::NUMERIC(10,2) AS extra_charges,
+        mta_tax::NUMERIC(10,2) AS mta_tax,
+        tip_amount::NUMERIC(10,2) AS tip_amount,
+        tolls_amount::NUMERIC(10,2) AS tolls_amount,
+        total_amount::NUMERIC(10,2) AS total_amount,
         
         -- Categoricals
-        CAST(payment_type AS INTEGER) AS payment_type_id,
-        CAST(RatecodeID AS INTEGER) AS rate_code_id,
+        payment_type::INTEGER AS payment_type_id,
+        "RatecodeID"::INTEGER AS rate_code_id,
         
         -- Metadata
-        'green' AS taxi_type,
+        taxi_type,
         CURRENT_TIMESTAMP AS loaded_at
         
     FROM source
